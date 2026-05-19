@@ -1,0 +1,9 @@
+# Python standard library only — no extra packages required.
+# Requires Python 3.10+ (uses built-in sqlite3 and tkinter).
+#
+# On some Linux systems tkinter must be installed separately:
+#   Ubuntu/Debian:  sudo apt-get install python3-tk
+#   Fedora:         sudo dnf install python3-tkinter
+#   Arch:           sudo pacman -S tk
+#
+# Windows & macOS: tkinter is bundled with the standard Python installer.
