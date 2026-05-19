@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overtime Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Overtime Calculator</h1>
+
+      <form id="overtime-form" novalidate>
+        <label for="hourly-rate">Hourly rate</label>
+        <input
+          id="hourly-rate"
+          name="hourly-rate"
+          type="number"
+          min="0"
+          step="0.01"
+          placeholder="e.g. 22.50"
+          required
+        />
+
+        <label for="hours-worked">Hours worked</label>
+        <input
+          id="hours-worked"
+          name="hours-worked"
+          type="number"
+          min="0"
+          step="0.01"
+          placeholder="e.g. 47.5"
+          required
+        />
+
+        <button type="submit">Calculate</button>
+      </form>
+
+      <p id="error-message" class="error" aria-live="polite"></p>
+
+      <section id="results" class="results" hidden>
+        <h2>Pay Breakdown</h2>
+        <p>Regular hours: <span id="regular-hours"></span></p>
+        <p>Overtime hours: <span id="overtime-hours"></span></p>
+        <p>Regular pay: <span id="regular-pay"></span></p>
+        <p>Overtime pay: <span id="overtime-pay"></span></p>
+        <p class="total">Total pay: <span id="total-pay"></span></p>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
